@@ -12,7 +12,7 @@ def build_graphic():
 def generate_style():
     # load in the file  
     styles = pd.read_csv("./styles.csv")
-
+    # so like hi
     accessory = random.randint(0,9)
     shape = random.randint(0,9)
     extra = random.randint(0,9)

@@ -1,4 +1,47 @@
-# You are given an array of integers representing coordinates of obstacles situated on a straight line.
-# Assume that you are jumping from the point with coordinate 0 to the right. You are allowed only to make jumps of the same length represented by some integer.
-# Find the minimal length of the jump enough to avoid all the obstacles.
+def solution(inputArray):
 
+    inputArray = sorted(inputArray) # sort the list from smallest to largest
+    jumpLen = 0 # hold the length of the jumps
+    '''
+    unusedNums = [] # hold numbers not touched on
+    
+    for i in range(0,inputArray[-1]): # between 0 and max num in arr
+        if i not in inputArray:
+            unusedNums.append(i)
+            
+    print(unusedNums)
+      
+    largestGap = 0      
+    for i in range(0,len(unusedNums)+1):
+        diff = unusedNums[i+1] - unusedNums[i]
+        
+        if diff > largestGap:
+            largestGap = diff
+            
+    print(largestGap)
+        
+    pointer1 = 0
+    pointer2 = 1
+    diff1 = unusedNums[pointer2] - unusedNums[pointer1]
+    pointer2 +=1
+    while pointer1 < len(unusedNums) and pointer1 < len(unusedNums):
+        num1 = unusedNums[pointer1]
+        num2 = unusedNums[pointer2]
+        
+        diff2 = num2 - num1
+        
+        if diff1 < diff2:
+    '''
+    
+    for i in range(1, max(inputArray)+max(inputArray)): # not sure if i understand this incrementation
+        print("jumpLen: ", i)
+        jumpLen = i
+        for j in range(0,max(inputArray)+jumpLen, jumpLen):
+            print("j: ", j)
+            if j in inputArray:
+                print(j, " is in arr")
+                break
+            if j > max(inputArray):
+                return jumpLen
+            
+    return jumpLen

@@ -40,16 +40,18 @@ class Solution(object):
             longest_pal = s[0]
         elif len(s) == 0:
             return 0
-        
+        pal = ""
         # Odd length palindromes
         for i in range(1, len(s)):
             left = i-1
             right = i+1
             while left>=0 and right<=len(s)-1 and s[left] == s[right]:
+                pal = s[left:right+1]
                 left -=1
                 right +=1
-                
-            pal = s[left:right]
+            
+            
+            print(left, right, pal)
             if len(pal) > len(longest_pal):
                 longest_pal = pal
                 
@@ -58,9 +60,11 @@ class Solution(object):
             left = i
             right = i+1
             while left>=0 and right<=len(s)-1 and s[left] == s[right]:
+                pal = s[left:right+1]
                 left-=1
                 right+=1
-            pal = s[left:right]
+           
+            print(left, right, pal)
             if len(pal) > len(longest_pal):
                 longest_pal = pal
                 

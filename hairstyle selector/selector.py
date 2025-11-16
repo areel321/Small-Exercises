@@ -7,7 +7,7 @@ import pandas as pd
 from graphics import * 
 
 def build_graphic(win):
-    heading = Text(Point(50, 90), "Our style for today is")
+    heading = Text(Point(50, 90), "Our hair style for today is")
     heading.setTextColor("purple")
     heading.setStyle("bold")
     heading.setSize(20)
@@ -44,9 +44,11 @@ def main():
     accessory, shape, extra = generate_style(styles)
     populate_graphic(accessory, shape, extra, win)
 
-    p = win.getMouse()
+    
     # Close the window
-    win.close()
+    p = win.getMouse()
+    if p:
+        win.close()
 
 
 

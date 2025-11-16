@@ -69,3 +69,32 @@ class Solution(object):
                 longest_pal = pal
                 
         return longest_pal
+
+
+# dynamic programming attempt
+class Solution(object):
+    def longestPalindrome(self, s):
+        """
+        :type s: str
+        :rtype: str
+        """
+        matrix = []
+        for i in range(0, len(s)):
+            row = []
+            for j in range(0, len(s)):
+                row.append(0)
+            matrix.append(row)
+            
+        largest_diff  = 0
+        max_pal = ""
+        for i in range(0, len(s)):
+            for j in range(0, len(s)):
+                potential = s[i:j]
+                # print(i, j, potential, potential == potential[::-1])
+                if len(potential) >= 1 and potential == potential[::-1]:
+                    matrix[i][j] = 1
+                    if abs( i - j ) > largest_diff:
+                        largest_diff = abs( i - j )
+                        max_pal = potential
+        return max_pal
+        

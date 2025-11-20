@@ -14,6 +14,28 @@ Logan Castrucci
 Max of 9,7 = 9
 Max of 9,7,11 = 9 + 11 = 20
 '''
+
+class Solution(object):
+    def rob(self, nums):
+        """
+        :type nums: List[int]
+        :rtype: int
+        """
+
+        # max of current + (current-1 + current-3 or current-2)
+        # max of (current + up to previous-2) or (previous-1)
+        i = len(nums) - 1
+        return self.helper(nums, i)
+
+
+        
+    def helper(self, nums, i):
+        #check
+        if i < 0: # at the end
+            return 0
+        return max( (self.helper(nums, i-1)), (nums[i] + self.helper(nums, i-2)))
+
+'''
 class Solution(object):
     def rob(self, nums):
         """
@@ -33,4 +55,4 @@ class Solution(object):
         n = len(nums)
         m = nums[n-1]
         return max( (self.helper(nums[:n-1], cache)), (m + self.helper(nums[:n-2], cache)))
-        
+'''        

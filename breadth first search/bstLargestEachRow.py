@@ -44,3 +44,40 @@ def solution(t):
         #print(i)
         maxes.append(max(i))
     return maxes
+
+#
+# Binary trees are already defined with this interface:
+# class Tree(object):
+#   def __init__(self, x):
+#     self.value = x
+#     self.left = None
+#     self.right = None
+def solution(t):
+    '''Initialization: Enqueue the given source vertex into a queue and mark it as visited.
+    Exploration: While the queue is not empty:
+    Dequeue a node from the queue and visit it (e.g., print its value).
+    For each unvisited neighbor of the dequeued node:
+    Enqueue the neighbor into the queue.
+    Mark the neighbor as visited.
+    Termination: Repeat step 2 until the queue is empty.'''
+    queue = []
+    if t:
+        queue.append(t) # check if the tree exists, or has values
+    maxes = [] # arr of max values to return
+    while queue:
+        #print("queue", queue)
+        l = len(queue)
+        row = [] # current row
+        for i in range(0,l): # for this row
+            
+            curr  = queue.pop(0) # current value
+            #print(curr.value)
+            row.append(curr.value)
+            #add children to queue
+            if curr.left:
+                queue.append(curr.left)
+            if curr.right:
+                queue.append(curr.right)    
+        maxes.append(max(row)) # get max value of current row
+        
+    return maxes

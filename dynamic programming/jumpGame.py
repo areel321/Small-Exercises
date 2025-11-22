@@ -5,3 +5,26 @@ You are given an integer array nums. You are initially positioned at the array's
 
 Return true if you can reach the last index, or false otherwise.
 '''
+class Solution(object):
+
+    def canJump(self, nums):
+        """
+        :type nums: List[int]
+        :rtype: bool
+        """
+        # if we are at or over the length of nums, return true
+        # otherwise, try each jump up to max jump
+        return self.helper(nums, 0)
+        
+        
+    def helper(self, nums, pos):
+        #check
+        if (pos >= len(nums)-1):
+            print("i'm here")
+            return True
+        max_jump = nums[pos]
+        for i in range(1, max_jump + 1):
+            npos = pos + i
+            if self.helper(nums, npos):
+                return True
+        return False

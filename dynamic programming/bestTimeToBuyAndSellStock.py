@@ -7,9 +7,26 @@ You want to maximize your profit by choosing a single day to buy one stock and c
 
 Return the maximum profit you can achieve from this transaction. If you cannot achieve any profit, return 0.
 '''
+class Solution(object):
+    def maxProfit(self, prices):
+        """
+        :type prices: List[int]
+        :rtype: int
+        """
+        buy_price = prices[0] # start buying at first price
+        profit = 0
+        # if we encounter a smaller buy_price, buy that one
+        # if we get a larger profit, sell on that day
 
-
-
+        for i in prices:
+            if i < buy_price:
+                buy_price = i
+            
+            if i - buy_price > profit:
+                profit = i - buy_price
+            
+            
+        return profit
 '''
 class Solution(object):
     def maxProfit(self, prices):
@@ -28,5 +45,4 @@ class Solution(object):
             
             
         return greatestPrice
-
 '''

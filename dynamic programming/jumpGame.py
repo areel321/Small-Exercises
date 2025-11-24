@@ -14,17 +14,18 @@ class Solution(object):
         """
         # if we are at or over the length of nums, return true
         # otherwise, try each jump up to max jump
-        return self.helper(nums, 0)
+        return self.helper(nums, 0, nums[0])
         
         
-    def helper(self, nums, pos):
+    def helper(self, nums, pos, jump):
         #check
         if (pos >= len(nums)-1):
             print("i'm here")
             return True
-        max_jump = nums[pos]
-        for i in range(1, max_jump + 1):
+
+        for i in range(1, jump + 1):
             npos = pos + i
-            if self.helper(nums, npos):
+            if self.helper(nums, npos, nums[npos]):
                 return True
         return False
+        

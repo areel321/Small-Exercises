@@ -9,3 +9,37 @@ Insert a character
 Delete a character
 Replace a character
 '''
+# https://leetcode.com/problems/edit-distance/solutions/159295/python-solutions-and-intuition-by-anders-amxq
+class Solution(object):
+    def minDistance(self, word1, word2):
+        """
+        :type word1: str
+        :type word2: str
+        :rtype: int
+        """
+        dp = [[0] *(len(word2)+1) for _ in range(len(word1)+1)]
+
+        for i in range(0, len(word1)+1):
+            dp[i][0] = i
+        for j in range(0, len(word2)+1):
+            dp[0][j] = j
+        
+        for i in range(1, len(word1)+1):
+            for j in range(1, len(word2)+1):
+                if word1[i-1] == word2[j-1]:
+                    dp[i][j] = dp[i-1][j-1]
+                else:
+                    dp[i][j] = 1 + min(dp[i-1][j], dp[i][j-1], dp[i-1][j-1])
+        
+        return dp[-1][-1]
+
+        
+    def insert(self, w, c, p):
+        return w[:p] + c + w[p:]
+
+    def delete(self, w, c):
+        return w.replace(c, "")
+
+    def replace(self, w, c, p):
+        return w.replace(p, c)
+    

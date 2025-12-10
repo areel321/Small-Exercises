@@ -1,0 +1,102 @@
+Given the head of a sorted linked list, delete all duplicates such that each element appears only once.
+
+Change: The list is no longer sorted - Given the head of a linked list, delete all duplicates such that each element appears only once.
+
+
+# Definition for singly-linked list.
+# class ListNode(object):
+#     def __init__(self, val=0, next=None):
+#         self.val = val
+#         self.next = next
+
+Def del_dup(head):
+	# add in checks for empty list or len of 1
+
+	Curr = head
+	Nums = {}
+
+	# iteration though the linked list to create a hash of values and the number of times they appear
+	While curr:
+		# add value into hash, with appearance value of 1
+		If curr.val in nums.keys():
+			nums.add(curr.val, 1)
+		# value is already in hash, so we must add another appearance
+else:
+		Nums[curr.val] += 1
+	
+	Curr = head.next
+	Prev = head
+	# second iteration to remove duplicates
+	While curr.next:
+		# this value is duplicated in the list
+		If nums[curr.val] > 1:
+			# remove this curr node
+			Next = curr.next
+			Prev = next
+			# decrement appearances
+			Nums[curr.val] -= 1
+		Else:
+			Prev = curr
+Curr = curr.next
+Return head
+
+		
+
+			
+		
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+—---------------
+Given the head of a sorted linked list, delete all duplicates such that each element appears only once.
+
+
+# Definition for singly-linked list.
+# class ListNode(object):
+#     def __init__(self, val=0, next=None):
+#         self.val = val
+#         self.next = next
+
+Def del_dup(head):
+	# return nothing if our list is empty
+	If not head:
+		Return
+
+	# use the head node value as the initial curr value
+	curr = head # first 4
+
+	# while we have a next, if curr = next, delete the current node
+	While curr.next: 
+		If curr.val == curr.next.val:
+			# delete the current node, making next the current node
+			Next = curr.next 
+			If prev:
+				Prev.next = next
+			Else:
+				Head = next
+		Else:
+			Prev = curr
+		Curr = curr.next
+
+	# once at end, when there is no next node
+	Return head
+	

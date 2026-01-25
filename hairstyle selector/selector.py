@@ -34,7 +34,7 @@ def populate_graphic(accessory, shape, extra, win):
 
 def main():
     # load in the file  hairstyle selector\styles.csv
-    styles = pd.read_csv("hairstyle selector/styles.csv")
+    styles = pd.read_csv("styles.csv")
     # build the graphic
     #Create a white window for weekly calendar
     win = GraphWin('hairstyle', 550, 550)

@@ -16,9 +16,9 @@ def choose_option(win, title, options):
 
     buttons = []
     x1, x2 = 20, 80
-    button_height = 8
+    button_height = 5
     gap = 3
-    y = 70
+    y = 75
 
     for label, value in options:
         rect = Rectangle(Point(x1, y), Point(x2, y + button_height))
@@ -59,12 +59,17 @@ def make_selections(watchlist, win):
         runtime_options
     )
 
-    provider_options = [
+    provider_options = []
+    providers = set(watchlist['provider'].tolist())
+    for i in providers:
+        provider_options.append((i, i))
+    '''provider_options = [
         ("Netflix", "netflix"),
         ("Hulu", "hulu"),
         ("Prime", "prime"),
         ("No preference", "any")
-    ]
+    ]'''
+    provider_options.append(("No preference", "any"))
 
     provider_spec = choose_option(
         win,
@@ -109,10 +114,15 @@ def populate_graphic(title, runtime, provider, win):
         heading.setSize(20)
         heading.draw(win)
 
-        hours = round(runtime // 60)
-        minutes = round(runtime % 60)
+
+        if runtime > 0:
+            hours = round(runtime // 60)
+            minutes = round(runtime % 60)
+            runtimetext = Text(Point(50, 75), str(hours)+" hours "+str(minutes)+" minutes")
+        else:
+            runtimetext = Text(Point(50, 75), "runtime unavailable")
         titletext = Text(Point(50, 80), title)
-        runtimetext = Text(Point(50, 75), str(hours)+" hours "+str(minutes)+" minutes")
+        
         providertext = Text(Point(50, 70), provider)
         
 

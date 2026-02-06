@@ -18,7 +18,7 @@ def choose_option(win, title, options):
     x1, x2 = 20, 80
     button_height = 5
     gap = 3
-    y = 75
+    y = 80
 
     for label, value in options:
         rect = Rectangle(Point(x1, y), Point(x2, y + button_height))
@@ -69,7 +69,9 @@ def make_selections(watchlist, win):
         ("Prime", "prime"),
         ("No preference", "any")
     ]'''
+    provider_options.append(("On My Streaming", "streaming"))
     provider_options.append(("No preference", "any"))
+   
 
     provider_spec = choose_option(
         win,
@@ -81,7 +83,11 @@ def make_selections(watchlist, win):
 
 def generate_movie(watchlist, runtime_spec, provider_spec):
 
-    if provider_spec != "any":
+    if provider_spec == "streaming":
+        # filter out theaters and rent
+        watchlist = watchlist[watchlist['provider'] != "theaters"]
+        watchlist = watchlist[watchlist['provider'] != "rent"]
+    elif provider_spec != "any":
         # filter by provider
         watchlist = watchlist[watchlist['provider'] == provider_spec]
     if runtime_spec != 0:
@@ -132,11 +138,11 @@ def populate_graphic(title, runtime, provider, win):
     
 
 def main():
-    # load in the file movie selector/watchlist.xlsx
+    # load in the file movie selector/watchlist.xlsx w/ columns title,provider,runtime
     watchlist = pd.read_csv("watchlist.csv")
     # build the graphic
     #Create a window
-    win = GraphWin('selection', 550, 550)
+    win = GraphWin('selection', 550, 650)
     win.setBackground('light pink')
     win.setCoords(0,0,100,100)
 

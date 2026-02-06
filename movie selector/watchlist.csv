@@ -1,73 +1,86 @@
-title,provider,runtime,last updated
-erin brockovich,netflix,131,1/27/2026
-okja,netflix,120,1/27/2026
-did you hear about the morgans,netflix,103,1/27/2026
-moonrise kingdom,netflix,94,1/27/2026
-10 dance,netflix,126,1/27/2026
-dracula,netflix,127,1/27/2026
-i used to be funny,netflix,105,1/27/2026
-am i okay,netflix,86,
-black swan ,hulu,109,
-eddington,hbo max,148,1/27/2026
-we live in time,hbo max,108,1/27/2026
-queer,hbo max,137,1/27/2026
-uncut gems,hbo max,135,1/27/2026
-perks of being a wallflower,hbo max,103,
-the lighthouse,hbo max,110,
-begin again,prime,104,1/27/2026
-a rainy day in new york,prime,93,1/27/2026
-four weddings and a funeral,prime,117,1/27/2026
-the girl next door,prime,110,1/27/2026
-holland,prime,108,
-me before you,tubi/pluto/free stream,110,1/27/2026
-bridget jones diary,tubi/pluto/free stream,97,1/27/2026
-girl interrupted,tubi/pluto/free stream,127,1/27/2026
-spree,tubi/pluto/free stream,93,1/27/2026
-truman show,tubi/pluto/free stream,103,1/27/2026
-drop dead gorgeous,tubi/pluto/free stream,98,
-only lovers left alive,tubi/pluto/free stream,123,
-ingrid goes west,tubi/pluto/free stream,97,
-interview with the vampire,rent,123,1/27/2026
-bewitched,rent,102,1/27/2026
-scooby doo and the witches ghost,rent,77,1/27/2026
-killers of the flower moon,rent,206,1/27/2026
-booksmart,rent,102,1/27/2026
-sleepless in seattle,rent,105,1/27/2026
-nomad land,rent,108,1/27/2026
-charliers angels,rent,98,1/27/2026
-the virgin suicides,rent,97,1/27/2026
-two weeks notice,rent,101,1/27/2026
-reality bites,rent,99,1/27/2026
-wolfwalkers,rent,103,1/27/2026
-maurice,rent,140,1/27/2026
-pride + prejudice,rent,129,1/27/2026
-crazy stupid love,rent,118,1/27/2026
-dan in real life,rent,98,1/27/2026
-fantastic mr fox,rent,87,1/27/2026
-theater camp,rent,93,1/27/2026
-fight club,rent,139,1/27/2026
-panic room,rent,112,
-f1,rent,156,
-sentimental value,rent,135,
-the history of sound,rent,128,
-eternity,rent,114,
-whiplash,rent,107,
-the beguiled,rent,94,
-handmaiden,rent,145,
-the favourite,rent,120,
-marcel,rent,90,
-only you,rent,115,
-breakfast at tiffanys,paramount,115,1/27/2026
-planes trains and automobiles,paramount,93,1/27/2026
-interstellar,paramount,169,1/27/2026
-tar,peacock,158,1/27/2026
-the drama,theaters,,1/27/2026
-wurthering heights,theaters,,1/27/2026
-hamnet,theaters,125,1/27/2026
-marty supreme,theaters,153,1/27/2026
-slap her shes french,rent,88,1/27/2026
-the secret agent,theaters,,
-the moment,theaters,,
-100 nights hero,theaters,,
-the gallerist,theaters,,
-i want your sex,theaters,,
+﻿title,provider,runtime,watch date,status,media,last updated
+“wuthering heights”,theaters,0,,to watch,movie,"February 2, 2026 6:41 PM (UTC)"
+10dance,netflix,126,,to watch,movie,"February 2, 2026 6:45 PM (UTC)"
+100 nights of hero,theaters,0,,to watch,movie,"February 2, 2026 6:41 PM (UTC)"
+am i ok?,hbo max,86,,to watch,movie,"February 3, 2026 4:07 PM (UTC)"
+black swan,hulu,109,,to watch,movie,"February 2, 2026 6:41 PM (UTC)"
+blackkklansman,rent,135,,to watch,movie,"February 3, 2026 4:15 PM (UTC)"
+booksmart,rent,102,,to watch,movie,"February 2, 2026 6:41 PM (UTC)"
+bram stoker's dracula,netflix,127,,to watch,movie,"February 2, 2026 6:41 PM (UTC)"
+breakfast at tiffany's,paramount,115,,to watch,movie,"February 2, 2026 6:41 PM (UTC)"
+bridget jones's diary,paramount,97,,to watch,movie,"February 3, 2026 4:11 PM (UTC)"
+catch me if you can,tubi/pluto/free stream,141,,to watch,movie,"February 3, 2026 4:16 PM (UTC)"
+charlie's angels,tubi/pluto/free stream,98,,to watch,movie,"February 3, 2026 4:11 PM (UTC)"
+chestnut,tubi/pluto/free stream,87,,to watch,movie,"February 3, 2026 4:16 PM (UTC)"
+clementine,tubi/pluto/free stream,94,,to watch,movie,"February 3, 2026 4:16 PM (UTC)"
+coda,rent,111,,to watch,movie,"February 3, 2026 4:16 PM (UTC)"
+crimson peak,rent,119,,to watch,movie,"February 3, 2026 4:17 PM (UTC)"
+d.e.b.s.,rent,92,,to watch,movie,"February 3, 2026 4:17 PM (UTC)"
+dan in real life,rent,98,,to watch,movie,"February 2, 2026 6:41 PM (UTC)"
+did you hear about the morgans?,rent,103,,to watch,movie,"February 3, 2026 4:07 PM (UTC)"
+dracula,theaters,0,,to watch,movie,"February 2, 2026 6:46 PM (UTC)"
+drop dead gorgeous,tubi/pluto/free stream,98,,to watch,movie,"February 2, 2026 6:41 PM (UTC)"
+eddington,rent,148,,to watch,movie,"February 3, 2026 4:09 PM (UTC)"
+erin brockovich,netflix,131,,to watch,movie,"February 2, 2026 6:41 PM (UTC)"
+eternity,rent,114,,to watch,movie,"February 2, 2026 6:41 PM (UTC)"
+f1,rent,156,,to watch,movie,"February 2, 2026 6:41 PM (UTC)"
+fantastic mr. fox,rent,87,,to watch,movie,"February 2, 2026 6:41 PM (UTC)"
+fargo,hbo max,97,,to watch,movie,"February 3, 2026 4:18 PM (UTC)"
+fight club,rent,139,,to watch,movie,"February 2, 2026 6:41 PM (UTC)"
+four weddings and a funeral,tubi/pluto/free stream,117,,to watch,movie,"February 3, 2026 4:15 PM (UTC)"
+"girl, interrupted",tubi/pluto/free stream,127,,to watch,movie,"February 2, 2026 6:41 PM (UTC)"
+girlfriends,rent,86,,to watch,movie,"February 3, 2026 4:18 PM (UTC)"
+good time,hbo max,101,,to watch,movie,"February 3, 2026 4:19 PM (UTC)"
+green book,rent,130,,to watch,movie,"February 3, 2026 4:19 PM (UTC)"
+hamnet,theaters,125,,to watch,movie,"February 2, 2026 6:41 PM (UTC)"
+happy-go-lucky,rent,118,,to watch,movie,"February 3, 2026 4:20 PM (UTC)"
+holland,prime,108,,to watch,movie,"February 2, 2026 6:41 PM (UTC)"
+i want your sex,theaters,0,,to watch,movie,"February 2, 2026 6:41 PM (UTC)"
+imagine me & you,prime,94,,to watch,movie,"February 3, 2026 4:20 PM (UTC)"
+ingrid goes west,tubi/pluto/free stream,97,,to watch,movie,"February 2, 2026 6:41 PM (UTC)"
+interstellar,paramount,169,,to watch,movie,"February 2, 2026 6:41 PM (UTC)"
+interview with the vampire,rent,123,,to watch,movie,"February 2, 2026 6:41 PM (UTC)"
+killers of the flower moon,rent,206,,to watch,movie,"February 2, 2026 6:41 PM (UTC)"
+marcel the shell with shoes on,rent,90,,to watch,movie,"February 2, 2026 6:41 PM (UTC)"
+marty supreme,theaters,153,,to watch,movie,"February 2, 2026 6:41 PM (UTC)"
+maurice,rent,140,,to watch,movie,"February 2, 2026 6:41 PM (UTC)"
+me before you,rent,110,,to watch,movie,"February 3, 2026 4:23 PM (UTC)"
+midnight in paris,tubi/pluto/free stream,94,,to watch,movie,"February 3, 2026 4:23 PM (UTC)"
+multiplicity,rent,117,,to watch,movie,"February 3, 2026 4:24 PM (UTC)"
+no other choice,theaters,139,,to watch,movie,"February 3, 2026 4:25 PM (UTC)"
+okja,netflix,120,,to watch,movie,"February 2, 2026 6:41 PM (UTC)"
+only lovers left alive,tubi/pluto/free stream,123,,to watch,movie,"February 2, 2026 6:41 PM (UTC)"
+only you,rent,115,,to watch,movie,"February 2, 2026 6:41 PM (UTC)"
+panic room,rent,112,,to watch,movie,"February 2, 2026 6:41 PM (UTC)"
+"planes, trains and automobiles",rent,93,,to watch,movie,"February 3, 2026 4:27 PM (UTC)"
+queer,hbo max,137,,to watch,movie,"February 2, 2026 6:41 PM (UTC)"
+reality bites,rent,99,,to watch,movie,"February 2, 2026 6:41 PM (UTC)"
+rye lane,hulu,82,,to watch,movie,"February 3, 2026 4:27 PM (UTC)"
+scooby doo and the witches ghost,rent,77,,to watch,movie,"February 2, 2026 6:41 PM (UTC)"
+sentimental value,rent,135,,to watch,movie,"February 2, 2026 6:41 PM (UTC)"
+seven veils,rent,109,,to watch,movie,"February 3, 2026 4:29 PM (UTC)"
+slap her... she's french,rent,88,,to watch,movie,"February 2, 2026 6:41 PM (UTC)"
+spoiler alert,peacock,112,,to watch,movie,"February 3, 2026 4:29 PM (UTC)"
+spree,tubi/pluto/free stream,93,,to watch,movie,"February 2, 2026 6:41 PM (UTC)"
+tár,peacock,158,,to watch,movie,"February 2, 2026 6:41 PM (UTC)"
+taxi driver,rent,114,,to watch,movie,"February 3, 2026 4:30 PM (UTC)"
+the beguiled,prime,94,,to watch,movie,"February 3, 2026 4:31 PM (UTC)"
+the drama,theaters,0,,to watch,movie,"February 2, 2026 6:41 PM (UTC)"
+the favourite,peacock,120,,to watch,movie,"February 3, 2026 4:32 PM (UTC)"
+the first time,tubi/pluto/free stream,95,,to watch,movie,"February 3, 2026 4:33 PM (UTC)"
+the gallerist,theaters,0,,to watch,movie,"February 2, 2026 6:41 PM (UTC)"
+the girl next door,prime,110,,to watch,movie,"February 2, 2026 6:41 PM (UTC)"
+the handmaiden,rent,145,,to watch,movie,"February 3, 2026 4:34 PM (UTC)"
+the history of sound,rent,128,,to watch,movie,"February 2, 2026 6:41 PM (UTC)"
+the holdovers,rent,133,,to watch,movie,"February 3, 2026 4:35 PM (UTC)"
+the lighthouse,hbo max,110,,to watch,movie,"February 2, 2026 6:41 PM (UTC)"
+the moment,theaters,0,,to watch,movie,"February 2, 2026 6:41 PM (UTC)"
+the secret agent,theaters,0,,to watch,movie,"February 2, 2026 6:41 PM (UTC)"
+the shape of water,hbo max,123,,to watch,movie,"February 3, 2026 4:36 PM (UTC)"
+the truman show,tubi/pluto/free stream,103,,to watch,movie,"February 2, 2026 6:41 PM (UTC)"
+the virgin suicides,paramount,97,,to watch,movie,"February 3, 2026 4:36 PM (UTC)"
+theater camp,rent,93,,to watch,movie,"February 2, 2026 6:41 PM (UTC)"
+this is my life,rent,105,,to watch,movie,"February 3, 2026 4:37 PM (UTC)"
+we live in time,hbo max,108,,to watch,movie,"February 2, 2026 6:41 PM (UTC)"
+whiplash,netflix,107,,to watch,movie,"February 3, 2026 4:37 PM (UTC)"
+wolfwalkers,rent,103,,to watch,movie,"February 2, 2026 6:41 PM (UTC)"
